@@ -4,7 +4,7 @@
 
 This is a full stack sample project to illustrate service oriented architecture utilizing a containerized approach to deployment.
 It has an Express js backend API that uses the chinook sqlite3 database via sequelize ORM.
-The front next is a Next.js/ReactJS web application that consumes the backend API.
+The frontend is a Next.js/ReactJS web application that consumes the backend API.
 The client and server are separated into docker containers and orchestrated via docker-compose.
 
 
