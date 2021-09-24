@@ -1,12 +1,12 @@
+version: "2"
 services: 
     bpsapi:
         image: bryanstrader/bps-server:0.2
         ports:
-        - "5000:5000"
-
+            - "5000:5000"
     bpsapp:
         image: bryanstrader/bps-client:0.2
         links:
-        - bpsapi
+            - bpsapi
         ports:
-        - "3000:3000"
+            - "3000:3000"
