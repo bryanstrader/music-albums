@@ -1,0 +1,27 @@
+apiVersion: skaffold/v2beta24
+kind: Config
+metadata:
+  name: music-album-app
+build:
+  artifacts:
+    - image: bryanstrader/bps-client
+      context: bps-client
+      docker:
+        dockerfile: Dockerfile
+        buildArgs:
+          platform: linux/amd64
+    - image: bryanstrader/bps-server
+      context: bps-server
+      docker:
+        dockerfile: Dockerfile
+        buildArgs:
+          platform: linux/amd64
+  tagPolicy:
+    sha256: {}
+deploy:
+  kubectl:
+    manifests:
+      - bpsapi-deployment.yaml
+      - bpsapi-service.yaml
+      - bpsapp-deployment.yaml
+      - bpsapp-service.yaml
