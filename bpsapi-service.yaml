@@ -10,9 +10,9 @@ metadata:
   name: bpsapi
 spec:
   ports:
-    - name: "5000"
-      port: 5000
-      targetPort: 5000
+    - name: "5007"
+      port: 5007
+      targetPort: 5007
   selector:
     io.kompose.service: bpsapi
 status:

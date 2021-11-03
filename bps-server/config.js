@@ -1,5 +1,5 @@
 const API_URL = '/api';
-const SERVER_PORT = 5000;
+const SERVER_PORT = 5007;
 const PUBLIC_DIR = 'public';
 
 module.exports = {

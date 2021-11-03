@@ -7,4 +7,4 @@ RUN npm i -D sqlite3
 RUN rimraf node_modules
 RUN npm install
 CMD npm run start
-EXPOSE 5000
+EXPOSE 5007

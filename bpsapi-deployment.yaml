@@ -24,10 +24,10 @@ spec:
         io.kompose.service: bpsapi
     spec:
       containers:
-        - image: bryanstrader/bps-server:0.6
+        - image: bryanstrader/bps-server:0.7
           name: bpsapi
           ports:
-            - containerPort: 5000
+            - containerPort: 5007
           resources: {}
       restartPolicy: Always
 status: {}

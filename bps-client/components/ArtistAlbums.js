@@ -10,12 +10,7 @@ const ArtistAlbums = ({ artistId }) => {
 
     useEffect(() => {
         setLoading(true)
-        fetch(`${BASE_URL}/artists/${artistId}/albums`, {
-            mode: 'cors',
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
-        })
+        fetch(`${BASE_URL}/artists/${artistId}/albums`)
             .then((response) => response.json())
             .then((data) => {
                 setLoading(false)

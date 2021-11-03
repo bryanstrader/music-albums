@@ -23,7 +23,7 @@ app.get(`${API_URL}`, (req, res) => {
 app.use(`${API_URL}/artists`, artistRouter);
 app.use(`${API_URL}/albums`, albumRouter);
 
-// start express server on port 5000
+// start express server on port 5007
 module.exports = app.listen(SERVER_PORT, () => {
     console.log(`server started on port ${SERVER_PORT}`);
 });

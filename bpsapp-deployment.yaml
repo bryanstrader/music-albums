@@ -24,7 +24,7 @@ spec:
         io.kompose.service: bpsapp
     spec:
       containers:
-        - image: bryanstrader/bps-client:0.6
+        - image: bryanstrader/bps-client:0.7
           name: bpsapp
           ports:
             - containerPort: 3000
